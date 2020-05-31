@@ -1,2 +1,3 @@
-# azurerm-acr-webapp
-Terraform module to create an App Service (WebApp) that pulls the image from Container Services (ACR)
+# AzureRM
+
+This Terraform module will help you create an App Service on Azure that uses an image from a Container Registry (ACR).
