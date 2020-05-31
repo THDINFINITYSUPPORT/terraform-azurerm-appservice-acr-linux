@@ -16,7 +16,16 @@ resource "azurerm_app_service" "app" {
       "DOCKER_REGISTRY_SERVER_PASSWORD"     = var.acr_password
       "DOCKER_REGISTRY_SERVER_URL"          = var.acr_url
       "DOCKER_REGISTRY_SERVER_USERNAME"     = var.acr_username
-    }  
+    }
+
+    storage_account {
+      name         = var.storage_account.name
+      type         = var.storage_account.type
+      account_name = var.storage_account.account_name
+      share_name   = var.storage_account.share_name
+      access_key   = var.storage_account.access_key
+      mount_path   = var.storage_account.mount_path
+    }
   
     lifecycle {
       ignore_changes = [
