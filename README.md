@@ -2,6 +2,8 @@
 
 This Terraform module will help you create an App Service on Azure that uses an image from a Container Registry (ACR) for Linxu containers.
 
+Link to Terraform Registry: [appservice-acr-linux](https://registry.terraform.io/modules/evandropomatti/appservice-acr-linux/azurerm)
+
 ## Usage
 
 ```terraform
