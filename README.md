@@ -42,7 +42,7 @@ The following Terraform arguments are supported for now:
 - [x] location
 - [x] app_service_plan_id
 - [x] app_settings
-- [] auth_settings
+- [ ] auth_settings
 - [x] storage_account
 - [ ] backup
 - [ ] connection_string
