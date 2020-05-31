@@ -24,5 +24,5 @@ resource "azurerm_app_service" "app" {
       ]
     }
   
-    tags = local.tags
+    tags = var.tags
   }
