@@ -2,7 +2,7 @@ resource "azurerm_app_service" "app" {
     name                = var.name
     location            = var.location
     resource_group_name = var.resource_group_name
-    app_service_plan_id = azurerm_app_service_plan.default.id
+    app_service_plan_id = var.app_service_plan_id
   
     site_config {
       app_command_line  = var.startup_command
@@ -15,7 +15,7 @@ resource "azurerm_app_service" "app" {
       "WEBSITES_ENABLE_APP_SERVICE_STORAGE" = var.enable_app_service_storage
       "DOCKER_REGISTRY_SERVER_PASSWORD"     = var.acr_password
       "DOCKER_REGISTRY_SERVER_URL"          = var.acr_url
-      "DOCKER_REGISTRY_SERVER_USERNAME"     = acr_username
+      "DOCKER_REGISTRY_SERVER_USERNAME"     = var.acr_username
     }  
   
     lifecycle {
