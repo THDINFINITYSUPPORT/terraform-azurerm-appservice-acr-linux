@@ -44,16 +44,16 @@ The following Terraform arguments are supported for now:
 - [x] app_settings
 - [] auth_settings
 - [x] storage_account
-- [] backup
-- [] connection_string
-- [] client_affinity_enabled
-- [] client_cert_enabled
-- [] enabled
-- [] https_only
-- [] logs
+- [ ] backup
+- [ ] connection_string
+- [ ] client_affinity_enabled
+- [ ] client_cert_enabled
+- [ ] enabled
+- [ ] https_only
+- [ ] logs
 - [x] site_config
 - [x] tags
-- [] identity
+- [ ] identity
 
 ## Testing
 
