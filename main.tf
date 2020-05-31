@@ -19,14 +19,14 @@ resource "azurerm_app_service" "app" {
     }
 
     dynamic "storage_account" {
-      for_each = var.storage_account["name"]
+      for_each = var.storage_account.name
       storage_account {
-        name           = var.storage_account["name"]
-        type           = var.storage_account["type"]
-        account_name   = var.storage_account["account_name"]
-        shared_name    = var.storage_account["shared_name"]
-        access_key     = var.storage_account["access_key"]
-        mount_path     = var.storage_account["mount_path"]
+        name           = var.storage_account.name
+        type           = var.storage_account.type
+        account_name   = var.storage_account.account_name
+        shared_name    = var.storage_account.shared_name
+        access_key     = var.storage_account.access_key
+        mount_path     = var.storage_account.mount_path
       }
     }
   

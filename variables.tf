@@ -64,8 +64,15 @@ variable "acr_password" {
 
 variable "storage_account" {
   description = "A storage account to be added to the App Service. Values match the deafult from Terraform documentation."
-  type        = map(string)
-  default     = { }
+  type        = object({
+    name         = string
+    type         = string
+    account_name = string
+    share_name   = string
+    access_key   = string
+    mount_path   = string
+  })
+  default = object()
 }
 
 variable "tags" {
