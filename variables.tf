@@ -72,7 +72,7 @@ variable "storage_account" {
     access_key   = string
     mount_path   = string
   })
-  default = {}
+#   default = {}
 }
 
 variable "tags" {
